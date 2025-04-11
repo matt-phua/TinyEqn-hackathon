@@ -177,6 +177,6 @@ DASHSCOPE_APP_ID=xxx
 
 ## 📄 License
 
-This repo is for educational and hackathon use only.
+The contents in this repo are intended solely for Tiny Equations' participation in the Alibaba Cloud Singapore Hackathon 2025.
 ```
 
