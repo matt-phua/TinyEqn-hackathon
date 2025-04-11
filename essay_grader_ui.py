@@ -16,14 +16,9 @@ def evaluate_with_backend(image: Image.Image):
         response = requests.post(API_URL, files={"file": buffered})
         if response.status_code == 200:
             result = response.json()
-
+            print(result.get("feedback"))
             # Format the band scores and feedback
-            feedback = (
-                #f"📊 **Content Band:** {result.get('content_band', 'N/A')}\n"
-                #f"📝 **Language Band:** {result.get('language_band', 'N/A')}\n\n"
-                "**Feedback:**\n"
-                + result.get(result["feedback"]).content
-            )
+            feedback = "**Feedback:**\n\n" + result.get("feedback", "No feedback provided.")
 
             # Convert annotated image bytes if included
             if "annotated_image" in result:
