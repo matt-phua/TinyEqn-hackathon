@@ -35,7 +35,7 @@ TinyEqn-hackathon/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/TinyEqn-hackathon.git
+git clone https://github.com/matt-phua/TinyEqn-hackathon.git
 cd TinyEqn-hackathon
 ```
 
